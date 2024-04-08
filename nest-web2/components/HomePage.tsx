@@ -1,22 +1,20 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../public/NEST.png'; // Update with the path to your logo image
+import logo from '../public/NEST.png'; 
 
 const HomePage = () => {
   return (
     <div className="flex flex-col min-h-screen">
         <header className="flex justify-between items-center p-4 bg-white">
-            <Link href="/">
-            <a>
-            <Image src={logo} alt="Nest Logo" width={50} height={50} />
-            </a>
-        </Link>
-        <nav>
-            <Link href="/"><a className="p-2">Home</a></Link>
-            <Link href="/plan"><a className="p-2">Plan</a></Link>
-            <Link href="/about"><a className="p-2">About</a></Link>
-            <Link href="/contacts"><a className="p-2">Contacts</a></Link>
-        </nav>
+            <Link legacyBehavior href="/">
+                <Image src={logo} alt="Nest Logo" width={50} height={50} />
+            </Link>
+            <nav>
+                <Link legacyBehavior href="/"><a className="p-2">Home</a></Link>
+                <Link legacyBehavior href="/plan"><a className="p-2">Plan</a></Link>
+                <Link legacyBehavior href="/about"><a className="p-2">About</a></Link>
+                <Link legacyBehavior href="/contacts"><a className="p-2">Contacts</a></Link>
+            </nav>
         </header>
         <main className="flex-grow">
             <section className="text-center p-8">
