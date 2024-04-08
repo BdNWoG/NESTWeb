@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../public/NEST.png'; 
+import SignInForm from '../components/SignInForm'; // Adjust the path as necessary
 
 const HomePage = () => {
   return (
@@ -19,7 +20,7 @@ const HomePage = () => {
         <main className="flex-grow">
             <section className="text-center p-8">
                 <h2 className="text-2xl font-bold">Sign In</h2>
-                {/* Form implementation */}
+                <SignInForm />
             </section>
             <section className="text-center p-8">
                 <h2 className="text-2xl font-bold">About Nest</h2>
